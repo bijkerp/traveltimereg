@@ -15,5 +15,32 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:layout_alignParentTop="true"
+        android:text="@string/selectBtDevice"
+        android:id="@+id/labelBluetoothDevice" />
+
+    <Spinner
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/availableBtDevices"
+        android:visibility="visible"
+        android:layout_below="@+id/labelBluetoothDevice"
+        android:layout_alignParentEnd="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/recordedHistory"
+        android:id="@+id/labelConnectHistory"
+        android:layout_below="@+id/availableBtDevices"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/connectHistory"
+        android:layout_below="@+id/labelConnectHistory"
+        android:minLines="5"
+        android:maxLines="5"
+        android:outlineProvider="bounds" />
 </RelativeLayout>

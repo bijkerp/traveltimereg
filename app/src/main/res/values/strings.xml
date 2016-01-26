@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">TravelTimeRegistration</string>
     <string name="action_settings">Settings</string>
+    <string name="selectBtDevice">Select Bluetooth device</string>
+    <string name="recordedHistory">Recorded events</string>
+    <string name="clearHistory">No device selected.\nSelect a bluetooth device to show connect/disconnect history.</string>
 </resources>
